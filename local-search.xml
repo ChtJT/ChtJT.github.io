@@ -4,13 +4,38 @@
   
   
   <entry>
+    <title>resnet</title>
+    <link href="/2023/07/16/ResNet/"/>
+    <url>/2023/07/16/ResNet/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Deep learning</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo&#39;s comment system</title>
     <link href="/2023/07/15/Hexo-s-comment-system/"/>
     <url>/2023/07/15/Hexo-s-comment-system/</url>
     
-    <content type="html"><![CDATA[<p>  今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后现在我又两种方法来实现评论系统，一种是借助别人搭建好的，一种是自己搭建一个。<br>  由于自己搭建博客评论系统比较困难，这种方法将在以后在实现。<br>  所以我选择了第一种方法，借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。</p>]]></content>
+    <content type="html"><![CDATA[<p>  今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。</p><span id="more"></span><p>  目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>Tools</tag>
+      
+    </tags>
     
   </entry>
   
@@ -29,6 +54,8 @@
       
       <tag>Tools</tag>
       
+      <tag>Amalgamate</tag>
+      
     </tags>
     
   </entry>
@@ -37,10 +64,10 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2023/07/15/hello-world/"/>
-    <url>/2023/07/15/hello-world/</url>
+    <link href="/2023/07/15/Hello-World/"/>
+    <url>/2023/07/15/Hello-World/</url>
     
-    <content type="html"><![CDATA[<p>  这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。</p><span id="more"></span><p>  关于创建个人博客，我想了很久，也学习了很多，一开始本来要使用VUE3+Spring boot的，但是本人学的不够深刻,最后决定先用hexo来帮助我。<br>  由于个人博客不需要太多的功能和搭建自己的服务器，它和我的其他网站不一样，所以我决定采用github上自带的静态网页功能来搭建我的个人博客。</p>]]></content>
+    <content type="html"><![CDATA[<pre><code class="hljs">这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。</code></pre><span id="more"></span><pre><code class="hljs">关于创建个人博客，我想了很久，也学习了很多，一开始本来要使用VUE3+Spring boot的，但是本人学的不够深刻，并且这个学期课程繁多，还有大创需要去做，最后，弄了许久也没有做出一个像样的东西来。</code></pre><p>突然有一天在网上看到了hexo+github page的文章，然后决定先用hexo来帮助我去实现我的个人博客。<br>    由于个人博客不需要太多的功能和搭建自己的服务器，它和我的其他网站不一样，所以hexo+github page足够我目前使用了。然后我在先看了下面这篇文章来大体了解了hexo的使用。<br>(<a href="https://juejin.cn/post/6844903713811890189#heading-24">https://juejin.cn/post/6844903713811890189#heading-24</a> “最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析”)<br>    最后，我在主题的挑选上看了许久，最后选了BlueLake、Next、Fluid，但是由于Next的黑白简介风格感觉太单调了，所以我就试了后面两款。<br>END</p>]]></content>
     
     
     
