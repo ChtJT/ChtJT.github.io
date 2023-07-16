@@ -8,7 +8,7 @@
     <link href="/2023/07/16/ResNet/"/>
     <url>/2023/07/16/ResNet/</url>
     
-    <content type="html"><![CDATA[<pre><code class="hljs">ResNet</code></pre>]]></content>
+    <content type="html"><![CDATA[<pre><code class="hljs">ResNet</code></pre><span id="more"></span><p>END</p>]]></content>
     
     
     
@@ -27,7 +27,7 @@
     <link href="/2023/07/15/Hexo-s-comment-system/"/>
     <url>/2023/07/15/Hexo-s-comment-system/</url>
     
-    <content type="html"><![CDATA[<pre><code class="hljs">今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。</code></pre><span id="more"></span><pre><code class="hljs">目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。</code></pre>]]></content>
+    <content type="html"><![CDATA[<pre><code class="hljs">今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。</code></pre><span id="more"></span><pre><code class="hljs">目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。</code></pre><p>END</p>]]></content>
     
     
     
@@ -46,7 +46,7 @@
     <link href="/2023/07/15/Amalgamate/"/>
     <url>/2023/07/15/Amalgamate/</url>
     
-    <content type="html"><![CDATA[<p>Amalgamate工具是专门用来对C&#x2F;C++的头文件(.h&#x2F;.hpp)和源文件(.c&#x2F;.cc&#x2F;.cpp)进行合并用的</p><span id="more"></span><p>下载链接：git clone <a href="https://github.com/vinniefalco/Amalgamate.git">https://github.com/vinniefalco/Amalgamate.git</a></p><p>文件结构建议为：<br>    core<br>      |-include<br>      |-src<br>    tools&#x2F;Amalgamate.exe<br>合并过程</p><ol><li>将Amalgamate.exe放在你的项目文件夹中</li><li>将include目录下的文件合并到一个文件中，命名为all.h</li><li>将src目录下的文件合并到一个文件中，命名为all.cpp</li><li>执行命令 ..&#x2F;amalgamate&#x2F;Amalgamate “${OPC[@]}” “${OUT_PUT_AMALGAMATE[@]}” “${OUT_PUT_MAIN[@]}”</li></ol>]]></content>
+    <content type="html"><![CDATA[<p>Amalgamate工具是专门用来对C&#x2F;C++的头文件(.h&#x2F;.hpp)和源文件(.c&#x2F;.cc&#x2F;.cpp)进行合并用的</p><span id="more"></span><p>下载链接：git clone <a href="https://github.com/vinniefalco/Amalgamate.git">https://github.com/vinniefalco/Amalgamate.git</a></p><p>文件结构建议为：<br>    core<br>      |-include<br>      |-src<br>    tools&#x2F;Amalgamate.exe<br>合并过程</p><ol><li>将Amalgamate.exe放在你的项目文件夹中</li><li>将include目录下的文件合并到一个文件中，命名为all.h</li><li>将src目录下的文件合并到一个文件中，命名为all.cpp</li><li>执行命令 ..&#x2F;amalgamate&#x2F;Amalgamate “${OPC[@]}” “${OUT_PUT_AMALGAMATE[@]}” “${OUT_PUT_MAIN[@]}”</li></ol><p>例子:<br>END</p>]]></content>
     
     
     
