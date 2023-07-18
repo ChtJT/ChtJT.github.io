@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>The use of Amalgamate</title>
+    <url>/2023/07/15/Amalgamate/</url>
+    <content><![CDATA[<p>Amalgamate工具是专门用来对C&#x2F;C++的头文件(.h&#x2F;.hpp)和源文件(.c&#x2F;.cc&#x2F;.cpp)进行合并用的</p>
+<span id="more"></span>
+<p>下载链接：git clone <a href="https://github.com/vinniefalco/Amalgamate.git">https://github.com/vinniefalco/Amalgamate.git</a></p>
+<p>文件结构建议为：<br>    core<br>      |-include<br>      |-src<br>    tools-amalgamate-Amalgamate.exe<br>           |-source_core_merge<br>                                     |-include<br>                                     |-amalgamate.sh</p>
+<p>合并过程：</p>
+<ol>
+<li>将Amalgamate.exe放在你的项目文件夹中</li>
+<li>将include目录下的文件合并到一个文件中，命名为all.h</li>
+<li>将src目录下的文件合并到一个文件中，命名为all.cpp</li>
+<li>执行命令 ..&#x2F;amalgamate&#x2F;Amalgamate “${OPC[@]}” “${OUT_PUT_AMALGAMATE[@]}” “${OUT_PUT_MAIN[@]}”</li>
+</ol>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#! /bin/bash</span><br><span class="line"></span><br><span class="line">IN_PUT_PATH=../../core</span><br><span class="line">OUT_PUT_AMALGAMATE=../../merged/all.cc</span><br><span class="line">OUT_PUT_MAIN=../../merged/main.cc</span><br><span class="line"></span><br><span class="line">xmake build</span><br><span class="line">./release/source_code_merge &quot;$&#123;IN_PUT_PATH[@]&#125;&quot; &quot;$&#123;OUT_PUT_AMALGAMATE[@]&#125;&quot;</span><br><span class="line"></span><br><span class="line">OPC=(</span><br><span class="line">    -w &quot;*.h;*.cc&quot; -s</span><br><span class="line">    -i &quot;../../core/include&quot;</span><br><span class="line">    -i &quot;../../core/include/details&quot;</span><br><span class="line">    -i &quot;../../core/src&quot;</span><br><span class="line">    -i &quot;../../core/src/details&quot;</span><br><span class="line">    -p &quot;../../core&quot;</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"># Run Amalgamate to combine the source and include directories</span><br><span class="line">#../amalgamate/Amalgamate &quot;$&#123;OPC[@]&#125;&quot; ../../merged/all_include.h ../../merged/amalgamate.h</span><br><span class="line">../amalgamate/Amalgamate &quot;$&#123;OPC[@]&#125;&quot; &quot;$&#123;OUT_PUT_AMALGAMATE[@]&#125;&quot; &quot;$&#123;OUT_PUT_MAIN[@]&#125;&quot;</span><br><span class="line"></span><br><span class="line">#../amalgamate/Amalgamate -p ../../core/include -i ../../core/include -i ../../core/src -w &quot;*.h;*.cc&quot; ../../merged/all_src.cc ../../merged/amalgamate.cc</span><br><span class="line"></span><br><span class="line"># Print a success message</span><br><span class="line">echo &quot;Amalgamation complete.&quot;</span><br></pre></td></tr></table></figure>
+
+<p>注：</p>
+<p>END</p>
+]]></content>
+      <tags>
+        <tag>Tools</tag>
+        <tag>Amalgamate</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/07/15/Hello-World/</url>
+    <content><![CDATA[<pre><code>这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。
+</code></pre>
+<span id="more"></span>
+<pre><code>关于创建个人博客，我想了很久，也学习了很多，一开始本来要使用VUE3+Spring boot的，但是本人学的不够深刻，并且这个学期课程繁多，还有大创需要去做，最后，弄了许久也没有做出一个像样的东西来。突然有一天在网上看到了hexo+github page的文章，然后决定先用hexo来帮助我去实现我的个人博客。
+由于个人博客不需要太多的功能和搭建自己的服务器，它和我的其他网站不一样，所以hexo+github page足够我目前使用了。然后我在先看了下面这篇文章来大体了解了hexo的使用。
+(https://juejin.cn/post/6844903713811890189#heading-24 &quot;最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析&quot;)
+最后，我在主题的挑选上看了许久，最后选了BlueLake、Next、Fluid，但是由于Next的黑白简介风格感觉太单调了，所以我就试了后面两款,主题将在以后在讨论。
+</code></pre>
+<p>END</p>
+]]></content>
+      <tags>
+        <tag>Daily</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo&#39;s comment system</title>
+    <url>/2023/07/15/Hexo-s-comment-system/</url>
+    <content><![CDATA[<pre><code>今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。
+</code></pre>
+<span id="more"></span>
+<pre><code>目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。
+</code></pre>
+<p>END</p>
+]]></content>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Notation In Python</title>
+    <url>/2023/07/18/Notation-In-Python/</url>
+    <content><![CDATA[<p>本篇文章介绍了python语言的一些运算符。</p>
+<span id="more"></span>
+
+<h3 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h3><p>x&#x3D;2，y&#x3D;1，z&#x3D;3</p>
+<table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th align="left">说明</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">+</td>
+<td align="left">加：两数相加</td>
+<td>x+y&#x3D;3</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">减：左数减右数</td>
+<td>x-y&#x3D;1</td>
+</tr>
+<tr>
+<td align="left">&#x2F;</td>
+<td align="left">除：</td>
+<td>x&#x2F;y&#x3D;2,z&#x2F;x&#x3D;1</td>
+</tr>
+<tr>
+<td align="left">*</td>
+<td align="left">乘：</td>
+<td>x*y&#x3D;2</td>
+</tr>
+<tr>
+<td align="left">%</td>
+<td align="left">取模：</td>
+<td>z%x&#x3D;1</td>
+</tr>
+<tr>
+<td align="left">&#x2F;&#x2F;</td>
+<td align="left">取整数：(向下取整)</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">**</td>
+<td align="left">幂：</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h3><p>a&#x3D;1，b&#x3D;2，c&#x3D;3，d&#x3D;1</p>
+<table>
+<thead>
+<tr>
+<th align="left">符号</th>
+<th>说明</th>
+<th align="left">例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&#x3D;&#x3D;</td>
+<td>等于：</td>
+<td align="left">a&#x3D;&#x3D;b（false）a&#x3D;&#x3D;d（true）</td>
+</tr>
+<tr>
+<td align="left">&gt;&#x3D;</td>
+<td>大于等于：</td>
+<td align="left">b&gt;&#x3D;a（true）</td>
+</tr>
+<tr>
+<td align="left">&lt;&#x3D;</td>
+<td>小于等于：</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">&gt;</td>
+<td>大于：</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">&lt;</td>
+<td>小于：</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">&lt;&gt;</td>
+<td>不等于:比较两个数是否相等：</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">!&#x3D;</td>
+<td>不等于:比较两个数是否相等：</td>
+<td align="left"></td>
+</tr>
+</tbody></table>
+<h3 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h3><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>说明</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>+&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>-&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>*&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x2F;&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>**&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&#x2F;&#x2F;&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>%&#x3D;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="按位运算符"><a href="#按位运算符" class="headerlink" title="按位运算符"></a>按位运算符</h3><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>说明</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>|</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>~</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>说明</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>or</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>not</td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="集合运算符"><a href="#集合运算符" class="headerlink" title="集合运算符"></a>集合运算符</h3><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>说明</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>交集：</td>
+<td></td>
+</tr>
+<tr>
+<td>|</td>
+<td>并集：</td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>差（与交集取差）：</td>
+<td></td>
+</tr>
+<tr>
+<td>^</td>
+<td>异或（交集的补集）</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+]]></content>
+      <tags>
+        <tag>Python</tag>
+        <tag>Notation</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ResNet</title>
+    <url>/2023/07/16/ResNet/</url>
+    <content><![CDATA[<p>ResNet，残差神经网络，2015年由微软实验室提出。ResNet网络有18层、34层、50层、101层、152层以及更高层数的网络。</p>
+<span id="more"></span>
+
+<h3 id="残差块的结构"><a href="#残差块的结构" class="headerlink" title="残差块的结构"></a>残差块的结构</h3><p>在层数较少的18层、34层采用的是basicblock，它由两个3×3的卷积层组，如图所示。</p>
+<p>END</p>
+]]></content>
+      <tags>
+        <tag>Neural network</tag>
+        <tag>CV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VGG</title>
+    <url>/2023/07/19/VGG/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
