@@ -307,6 +307,15 @@
       </tags>
   </entry>
   <entry>
+    <title>VGG</title>
+    <url>/2023/07/19/VGG/</url>
+    <content><![CDATA[]]></content>
+      <tags>
+        <tag>Neural network</tag>
+        <tag>CV</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ResNet</title>
     <url>/2023/07/16/ResNet/</url>
     <content><![CDATA[<p>ResNet，残差神经网络，2015年由微软实验室提出。ResNet网络有18层、34层、50层、101层、152层以及更高层数的网络。</p>
@@ -315,15 +324,6 @@
 <h3 id="残差块的结构"><a href="#残差块的结构" class="headerlink" title="残差块的结构"></a>残差块的结构</h3><p>在层数较少的18层、34层采用的是basicblock，它由两个3×3的卷积层组，如图所示。</p>
 <p>END</p>
 ]]></content>
-      <tags>
-        <tag>Neural network</tag>
-        <tag>CV</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VGG</title>
-    <url>/2023/07/19/VGG/</url>
-    <content><![CDATA[]]></content>
       <tags>
         <tag>Neural network</tag>
         <tag>CV</tag>
