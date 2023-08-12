@@ -19,29 +19,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。">
+    <meta name="description" content="​        快慢指针算法（Hare and Tortoise Arithmetic）是一种判断一个链表中是否有环路的算法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo&#39;s comment system">
-<meta property="og:url" content="http://example.com/2023/07/15/Hexo-s-comment-system/index.html">
+<meta property="og:title" content="Hare and Tortoise Arithmetic">
+<meta property="og:url" content="http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/index.html">
 <meta property="og:site_name" content="Cht&#39;s Blog">
-<meta property="og:description" content="今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。">
+<meta property="og:description" content="​        快慢指针算法（Hare and Tortoise Arithmetic）是一种判断一个链表中是否有环路的算法。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-07-15T04:55:05.000Z">
-<meta property="article:modified_time" content="2023-07-18T06:38:20.279Z">
+<meta property="og:image" content="e:\webproject\ChtJT.github.io\source_posts\Hare-and-Tortoise-Arithmetic\image.png">
+<meta property="article:published_time" content="2023-07-30T16:14:12.000Z">
+<meta property="article:modified_time" content="2023-07-30T13:02:03.701Z">
 <meta property="article:author" content="CJanus">
-<meta property="article:tag" content="Tools">
-<meta property="article:tag" content="Comment">
+<meta property="article:tag" content="Linked List">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:\webproject\ChtJT.github.io\source_posts\Hare-and-Tortoise-Arithmetic\image.png">
 
 
-<link rel="canonical" href="http://example.com/2023/07/15/Hexo-s-comment-system/">
+<link rel="canonical" href="http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/07/15/Hexo-s-comment-system/","path":"2023/07/15/Hexo-s-comment-system/","title":"Hexo's comment system"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/","path":"2023/07/31/Hare-and-Tortoise-Arithmetic/","title":"Hare and Tortoise Arithmetic"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo's comment system | Cht's Blog</title>
+<title>Hare and Tortoise Arithmetic | Cht's Blog</title>
   
 
 
@@ -127,7 +128,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -140,6 +141,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#LeetCode-%E7%AC%AC141%E9%A2%98-%EF%BC%88%E6%A8%A1%E6%9D%BF%EF%BC%89"><span class="nav-number">1.</span> <span class="nav-text">LeetCode 第141题 （模板）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#LeetCode%E7%AC%AC142%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">LeetCode第142题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%A5%E5%8F%A3%E7%9A%84%E6%95%B0%E5%AD%A6%E8%AF%81%E6%98%8E"><span class="nav-number">2.1.</span> <span class="nav-text">入口的数学证明</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -195,7 +197,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/15/Hexo-s-comment-system/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -208,12 +210,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="Hexo's comment system | Cht's Blog">
+      <meta itemprop="name" content="Hare and Tortoise Arithmetic | Cht's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo's comment system
+          Hare and Tortoise Arithmetic
         </h1>
 
         <div class="post-meta-container">
@@ -223,15 +225,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2023-07-14 21:55:05" itemprop="dateCreated datePublished" datetime="2023-07-14T21:55:05-07:00">2023-07-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 23:38:20" itemprop="dateModified" datetime="2023-07-17T23:38:20-07:00">2023-07-17</time>
+      <time title="Created: 2023-07-30 09:14:12 / Modified: 06:02:03" itemprop="dateCreated datePublished" datetime="2023-07-30T09:14:12-07:00">2023-07-30</time>
     </span>
 
   
@@ -241,14 +237,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Word count in article: </span>
-      <span>137</span>
+      <span>872</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
+      <span>2 mins.</span>
     </span>
 </div>
 
@@ -258,9 +254,18 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。</p>
+    <div class="post-body" itemprop="articleBody"><p>​        快慢指针算法（Hare and Tortoise Arithmetic）是一种判断一个链表中是否有环路的算法。</p>
 <span id="more"></span>
-<p>目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。<br>END</p>
+
+<p>​        慢指针每次走一步，快指针每次走两步（可以是任意长&gt;1的步数），当有回路的时候，两个指针必然有相等的时候。</p>
+<p>时间复杂度为O(n)</p>
+<h3 id="LeetCode-第141题-（模板）"><a href="#LeetCode-第141题-（模板）" class="headerlink" title="LeetCode 第141题 （模板）"></a>LeetCode 第141题 （模板）</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode *head)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (head==<span class="literal">NULL</span>||head-&gt;next==<span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode *slow=head;</span><br><span class="line">    ListNode *fast=head-&gt;next;</span><br><span class="line">    <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        slow=slow-&gt;next;</span><br><span class="line">        fast=fast-&gt;next-&gt;next;</span><br><span class="line">        <span class="keyword">if</span>(fast==slow) <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="LeetCode第142题"><a href="#LeetCode第142题" class="headerlink" title="LeetCode第142题"></a>LeetCode第142题</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//前面和模板基本一样</span></span><br><span class="line"><span class="comment">//主要目标为寻找入口点</span></span><br><span class="line">slow=head;</span><br><span class="line"><span class="keyword">while</span>(slow!=<span class="literal">NULL</span>&amp;&amp;fast!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(fast==slow) <span class="keyword">return</span> slow;</span><br><span class="line">    slow=slow-&gt;next;</span><br><span class="line">    fast=fast-&gt;next;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
+
+<p><img src="E:\webproject\ChtJT.github.io\source_posts\Hare-and-Tortoise-Arithmetic\image.png" alt="image"></p>
+<h4 id="入口的数学证明"><a href="#入口的数学证明" class="headerlink" title="入口的数学证明"></a>入口的数学证明</h4><p>​        假设C点为相遇点，此时头节点到入口距离为1（AB），入口到相遇点的距离为1（BC），相遇点到入口的距离为3（CB），环长为4&#x3D;BC+CB。</p>
+<p>​        在相遇时，快指针走过的步数&#x3D;AB+BC+n<em>（BC+CB），慢指针的步数&#x3D;AB+BC。快指针每次走 2 步，慢指针每次走 1 步&#x3D;&gt; AB+BC+n</em>（BC+CB）&#x3D;2*（AB+BC）。AB&#x3D; (n-1) * (BC+CB)+CB ，说明同时从头节点和相遇节点出发的两个指针，每次走 1 步，最终会在入口处相遇。</p>
 
     </div>
 
@@ -278,7 +283,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="http://example.com/2023/07/15/Hexo-s-comment-system/" title="Hexo&#39;s comment system">http://example.com/2023/07/15/Hexo-s-comment-system/</a>
+      <a href="http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/" title="Hare and Tortoise Arithmetic">http://example.com/2023/07/31/Hare-and-Tortoise-Arithmetic/</a>
   </li>
   <li class="post-copyright-license">
       <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -287,21 +292,20 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Tools/" rel="tag"># Tools</a>
-              <a href="/tags/Comment/" rel="tag"># Comment</a>
+              <a href="/tags/Linked-List/" rel="tag"># Linked List</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2023/07/15/Amalgamate/" rel="prev" title="The use of Amalgamate">
-                  <i class="fa fa-chevron-left"></i> The use of Amalgamate
+                <a href="/2023/07/24/Latent-Dirichlet-Allocation/" rel="prev" title="Latent Dirichlet Allocation">
+                  <i class="fa fa-chevron-left"></i> Latent Dirichlet Allocation
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/07/16/ResNet/" rel="next" title="ResNet">
-                  ResNet <i class="fa fa-chevron-right"></i>
+                <a href="/2023/08/08/Pandas-s-loc-and-iloc-Functions/" rel="next" title="Pandas's loc and iloc Functions">
+                  Pandas's loc and iloc Functions <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

@@ -34,6 +34,26 @@
       </tags>
   </entry>
   <entry>
+    <title>Hare and Tortoise Arithmetic</title>
+    <url>/2023/07/31/Hare-and-Tortoise-Arithmetic/</url>
+    <content><![CDATA[<p>​        快慢指针算法（Hare and Tortoise Arithmetic）是一种判断一个链表中是否有环路的算法。</p>
+<span id="more"></span>
+
+<p>​        慢指针每次走一步，快指针每次走两步（可以是任意长&gt;1的步数），当有回路的时候，两个指针必然有相等的时候。</p>
+<p>时间复杂度为O(n)</p>
+<h3 id="LeetCode-第141题-（模板）"><a href="#LeetCode-第141题-（模板）" class="headerlink" title="LeetCode 第141题 （模板）"></a>LeetCode 第141题 （模板）</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">bool</span> <span class="title">hasCycle</span><span class="params">(ListNode *head)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (head==<span class="literal">NULL</span>||head-&gt;next==<span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    ListNode *slow=head;</span><br><span class="line">    ListNode *fast=head-&gt;next;</span><br><span class="line">    <span class="keyword">while</span>(fast!=<span class="literal">NULL</span>&amp;&amp;fast-&gt;next!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">        slow=slow-&gt;next;</span><br><span class="line">        fast=fast-&gt;next-&gt;next;</span><br><span class="line">        <span class="keyword">if</span>(fast==slow) <span class="keyword">return</span> <span class="literal">true</span>;  </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="LeetCode第142题"><a href="#LeetCode第142题" class="headerlink" title="LeetCode第142题"></a>LeetCode第142题</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//前面和模板基本一样</span></span><br><span class="line"><span class="comment">//主要目标为寻找入口点</span></span><br><span class="line">slow=head;</span><br><span class="line"><span class="keyword">while</span>(slow!=<span class="literal">NULL</span>&amp;&amp;fast!=<span class="literal">NULL</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(fast==slow) <span class="keyword">return</span> slow;</span><br><span class="line">    slow=slow-&gt;next;</span><br><span class="line">    fast=fast-&gt;next;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="literal">NULL</span>;</span><br></pre></td></tr></table></figure>
+
+<p><img src="E:\webproject\ChtJT.github.io\source_posts\Hare-and-Tortoise-Arithmetic\image.png" alt="image"></p>
+<h4 id="入口的数学证明"><a href="#入口的数学证明" class="headerlink" title="入口的数学证明"></a>入口的数学证明</h4><p>​        假设C点为相遇点，此时头节点到入口距离为1（AB），入口到相遇点的距离为1（BC），相遇点到入口的距离为3（CB），环长为4&#x3D;BC+CB。</p>
+<p>​        在相遇时，快指针走过的步数&#x3D;AB+BC+n<em>（BC+CB），慢指针的步数&#x3D;AB+BC。快指针每次走 2 步，慢指针每次走 1 步&#x3D;&gt; AB+BC+n</em>（BC+CB）&#x3D;2*（AB+BC）。AB&#x3D; (n-1) * (BC+CB)+CB ，说明同时从头节点和相遇节点出发的两个指针，每次走 1 步，最终会在入口处相遇。</p>
+]]></content>
+      <tags>
+        <tag>Linked List</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/07/15/Hello-World/</url>
     <content><![CDATA[<p>这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。</p>
@@ -54,6 +74,15 @@
       <tags>
         <tag>Tools</tag>
         <tag>Comment</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Latent Dirichlet Allocation</title>
+    <url>/2023/07/24/Latent-Dirichlet-Allocation/</url>
+    <content><![CDATA[<p>Latent Dirichlet Allocation 又名潜在德里希勒分配，是一种主题模型，它可以将文档集中每篇文档的主题按照概率分布的形式给出。同时它也是一种无监督学习方法，相比于LSA，LDA可以自动确定文档集中的主题个数。</p>
+]]></content>
+      <tags>
+        <tag>LDA</tag>
       </tags>
   </entry>
   <entry>
@@ -313,6 +342,11 @@
         <tag>Python</tag>
         <tag>Notation</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Pandas&#39;s loc and iloc Functions</title>
+    <url>/2023/08/08/Pandas-s-loc-and-iloc-Functions/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>ResNet</title>
