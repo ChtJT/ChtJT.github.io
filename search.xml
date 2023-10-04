@@ -1,8 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Accuracy Precision Recall and F1</title>
+    <url>/2023/09/03/Accuracy-Precision-Recall-and-F1/</url>
+    <content><![CDATA[<h3 id="1-混淆矩阵"><a href="#1-混淆矩阵" class="headerlink" title="1.混淆矩阵"></a>1.混淆矩阵</h3><p>在二分类问题中，预测结果和实际结果亮亮结合会产生以下四种情况。</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th></th>
+<th>预测</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td align="left">实际</td>
+<td>Nagative</td>
+<td>TP</td>
+<td>FP</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td>Positive</td>
+<td>FN</td>
+<td>TN</td>
+</tr>
+</tbody></table>
+<h3 id="2-准确率"><a href="#2-准确率" class="headerlink" title="2.准确率"></a>2.准确率</h3><h4 id="定义：预测正确的结果占总样本的百分比"><a href="#定义：预测正确的结果占总样本的百分比" class="headerlink" title="定义：预测正确的结果占总样本的百分比"></a>定义：预测正确的结果占总样本的百分比</h4><p>$$<br>\frac{TP+TN}{TP+TN+FP+FN}<br>$$</p>
+<h3 id="3-精确率"><a href="#3-精确率" class="headerlink" title="3.精确率"></a>3.精确率</h3><h4 id="定义：在被所有预测为正的样本中实际为正样本的概率"><a href="#定义：在被所有预测为正的样本中实际为正样本的概率" class="headerlink" title="定义：在被所有预测为正的样本中实际为正样本的概率"></a>定义：在被所有预测为正的样本中实际为正样本的概率</h4><p>$$<br>\frac{TP}{TP+FP}<br>$$</p>
+<h3 id="4-召回率"><a href="#4-召回率" class="headerlink" title="4.召回率"></a>4.召回率</h3><h4 id="定义：在实际为正的样本中被预测为正样本的概率"><a href="#定义：在实际为正的样本中被预测为正样本的概率" class="headerlink" title="定义：在实际为正的样本中被预测为正样本的概率"></a>定义：在实际为正的样本中被预测为正样本的概率</h4><p>$$<br>\frac{TP}{TP+FN}<br>$$</p>
+<h3 id="5-F1分数"><a href="#5-F1分数" class="headerlink" title="5.F1分数"></a>5.F1分数</h3><p>$$<br>\frac{2<em>精确率</em>召回率}{精确率+召回率}<br>$$</p>
+]]></content>
+      <tags>
+        <tag>Deep Learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The use of Amalgamate</title>
-    <url>/2023/07/15/Amalgamate/</url>
+    <url>/2023/07/14/Amalgamate/</url>
     <content><![CDATA[<p>Amalgamate工具是专门用来对C&#x2F;C++的头文件(.h&#x2F;.hpp)和源文件(.c&#x2F;.cc&#x2F;.cpp)进行合并用的</p>
 <span id="more"></span>
 <p>下载链接：git clone <a href="https://github.com/vinniefalco/Amalgamate.git">https://github.com/vinniefalco/Amalgamate.git</a></p>
@@ -26,6 +67,11 @@
       </tags>
   </entry>
   <entry>
+    <title>Bayesian Optimization</title>
+    <url>/2023/10/03/Bayesian-Optimization/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>CBAM</title>
     <url>/2023/07/20/CBAM/</url>
     <content><![CDATA[]]></content>
@@ -35,27 +81,16 @@
   </entry>
   <entry>
     <title>Class Activation Mapping</title>
-    <url>/2023/08/13/Class-Activation-Mapping/</url>
+    <url>/2023/08/12/Class-Activation-Mapping/</url>
     <content><![CDATA[]]></content>
       <tags>
-        <tag>CAM</tag>
         <tag>Deep Learning</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2023/07/15/Hello-World/</url>
-    <content><![CDATA[<p>这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。</p>
-<span id="more"></span>
-<p>关于创建个人博客，我想了很久，也学习了很多，一开始本来要使用VUE3+Spring boot的，但是本人学的不够深刻，并且这个学期课程繁多，还有大创需要去做，最后，弄了许久也没有做出一个像样的东西来。突然有一天在网上看到了hexo+github page的文章，然后决定先用hexo来帮助我去实现我的个人博客。<br>由于个人博客不需要太多的功能和搭建自己的服务器，它和我的其他网站不一样，所以hexo+github page足够我目前使用了。然后我在先看了下面这篇文章来大体了解了hexo的使用。<br>(<a href="https://juejin.cn/post/6844903713811890189#heading-24">https://juejin.cn/post/6844903713811890189#heading-24</a> “最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析”)<br>最后，我在主题的挑选上看了许久，最后选了BlueLake、Next、Fluid，但是由于Next的黑白简介风格感觉太单调了，所以我就试了后面两款,主题将在以后在讨论。<br>END</p>
-]]></content>
-      <tags>
-        <tag>Daily</tag>
+        <tag>CAM</tag>
       </tags>
   </entry>
   <entry>
     <title>Hare and Tortoise Arithmetic</title>
-    <url>/2023/07/31/Hare-and-Tortoise-Arithmetic/</url>
+    <url>/2023/07/30/Hare-and-Tortoise-Arithmetic/</url>
     <content><![CDATA[<p>​        快慢指针算法（Hare and Tortoise Arithmetic）是一种判断一个链表中是否有环路的算法。</p>
 <span id="more"></span>
 
@@ -74,8 +109,19 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/07/14/Hello-World/</url>
+    <content><![CDATA[<p>这是第一篇文章，是我创建这个博客发表的。我将在这里记录我的生活，我的学习，我的成长。希望我能坚持下去，不要半途而废。</p>
+<span id="more"></span>
+<p>关于创建个人博客，我想了很久，也学习了很多，一开始本来要使用VUE3+Spring boot的，但是本人学的不够深刻，并且这个学期课程繁多，还有大创需要去做，最后，弄了许久也没有做出一个像样的东西来。突然有一天在网上看到了hexo+github page的文章，然后决定先用hexo来帮助我去实现我的个人博客。<br>由于个人博客不需要太多的功能和搭建自己的服务器，它和我的其他网站不一样，所以hexo+github page足够我目前使用了。然后我在先看了下面这篇文章来大体了解了hexo的使用。<br>(<a href="https://juejin.cn/post/6844903713811890189#heading-24">https://juejin.cn/post/6844903713811890189#heading-24</a> “最全Hexo博客搭建+主题优化+插件配置+常用操作+错误分析”)<br>最后，我在主题的挑选上看了许久，最后选了BlueLake、Next、Fluid，但是由于Next的黑白简介风格感觉太单调了，所以我就试了后面两款,主题将在以后在讨论。<br>END</p>
+]]></content>
+      <tags>
+        <tag>Daily</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo&#39;s comment system</title>
-    <url>/2023/07/15/Hexo-s-comment-system/</url>
+    <url>/2023/07/14/Hexo-s-comment-system/</url>
     <content><![CDATA[<p>今天在搭建个人博客的时候，想给我的博客弄一个评论系统。然后我要么自己搭建，要么借助别人搭建好的评论系统。</p>
 <span id="more"></span>
 <p>目前我对搭建评论系统没有任何了解，并且这段时间比较忙，所以我选择了借助别人搭建好的评论系统。在网上搜索的时候，发现了很多种类的评论系统下面我将列出每种的优点和不足。<br>END</p>
@@ -87,7 +133,7 @@
   </entry>
   <entry>
     <title>Latent Dirichlet Allocation</title>
-    <url>/2023/07/24/Latent-Dirichlet-Allocation/</url>
+    <url>/2023/07/23/Latent-Dirichlet-Allocation/</url>
     <content><![CDATA[<p>Latent Dirichlet Allocation 又名潜在德里希勒分配，是一种主题模型，它可以将文档集中每篇文档的主题按照概率分布的形式给出。同时它也是一种无监督学习方法，相比于LSA，LDA可以自动确定文档集中的主题个数。</p>
 ]]></content>
       <tags>
@@ -96,7 +142,7 @@
   </entry>
   <entry>
     <title>Notation In Python</title>
-    <url>/2023/07/18/Notation-In-Python/</url>
+    <url>/2023/07/17/Notation-In-Python/</url>
     <content><![CDATA[<p>本篇文章介绍了python语言的一些运算符。</p>
 <span id="more"></span>
 
@@ -354,27 +400,27 @@
   </entry>
   <entry>
     <title>Pandas&#39;s loc and iloc Functions</title>
-    <url>/2023/08/08/Pandas-s-loc-and-iloc-Functions/</url>
+    <url>/2023/08/07/Pandas-s-loc-and-iloc-Functions/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>VGG</title>
-    <url>/2023/07/19/VGG/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>Neural network</tag>
-        <tag>CV</tag>
-      </tags>
   </entry>
   <entry>
     <title>ResNet</title>
-    <url>/2023/07/16/ResNet/</url>
+    <url>/2023/07/15/ResNet/</url>
     <content><![CDATA[<p>ResNet，残差神经网络，2015年由微软实验室提出。ResNet网络有18层、34层、50层、101层、152层以及更高层数的网络。</p>
 <span id="more"></span>
 
 <h3 id="残差块的结构"><a href="#残差块的结构" class="headerlink" title="残差块的结构"></a>残差块的结构</h3><p>在层数较少的18层、34层采用的是basicblock，它由两个3×3的卷积层组，如图所示。</p>
 <p>END</p>
 ]]></content>
+      <tags>
+        <tag>Neural network</tag>
+        <tag>CV</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VGG</title>
+    <url>/2023/07/18/VGG/</url>
+    <content><![CDATA[]]></content>
       <tags>
         <tag>Neural network</tag>
         <tag>CV</tag>
